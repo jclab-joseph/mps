@@ -19,11 +19,6 @@ pipeline{
                 SNYK_MANIFEST_FILE         = 'package-lock.json'
                 SNYK_PROJECT_NAME          = 'openamt-mps'
             }
-            when {
-                anyOf {
-                    branch 'main';
-                }
-            }
             steps {
                 script{
                     scmCheckout { 
