@@ -1,6 +1,6 @@
 pipeline{
     agent {
-        label 'docker-amt'
+        label 'amazon-linux-t3-large-amd64'
     }
     options {
         buildDiscarder(logRotator(numToKeepStr: '5', daysToKeepStr: '30'))
